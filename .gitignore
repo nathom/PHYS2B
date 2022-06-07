@@ -6,6 +6,7 @@
 *.synctex.gz
 *.fdb_latexmk
 *.pdf
+*.dvi
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
