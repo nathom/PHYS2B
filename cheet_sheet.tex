@@ -40,25 +40,26 @@
 		                &
 
 		\begin{itemize}
-			\item The magnetic force on a moving charge is:
+			\item Magnetic force on a moving charge:
 			      \[ \vec{F} = q\vec{v} \times \vec{B} \]
-			\item The magnetic force on a current-carrying wire is:
+			\item Magnetic force on a current-carrying wire:
 			      \[ \vec{F} = I\vec{l} \times \vec{B} \]
-			\item The magnetic force between two parallel curren-carrying wires:
+			\item Magnetic force between two parallel curren-carrying wires:
 			      \[ F_{parallel wires} = \frac{\mu_0 l I_1 I_2}{2 \pi d}\]
-			\item The magnetic torque on a magnetic dipole is:
+			\item Magnetic dipole for a single loop \[\vec{\mu} = IA\]
+			\item Magnetic torque on a magnetic dipole:
 			      \[ \vec{\tau} = \vec{\mu} \times \vec{B}\]
 		\end{itemize} \\
 		\hline
 
-		Applications of the above equations:
+		Misc. Magnetic Field Formulae
 		\begin{itemize}
 			\item Magnetic field of a wire:
-			      \[B = \frac{\mu_0}{2\pi} \frac{I}{r}\]
+			      \[B = \frac{ \mu_0 }{2\pi} \frac{I}{r}\]
 			\item Magnetic field of a current loop:
-			      \[B_{center} = \frac{mu_0}{2}\frac{NI}{R}\]
+			      \[B_{center} = \frac{ \mu_0 }{2}\frac{NI}{R}\]
 			\item Magnetic field of a solenoid:
-			      \[B = \frac{\mu_0NI}{l}\]
+			      \[B = \frac{ \mu_0 NI}{l}\]
 		\end{itemize}
 
 		                &
@@ -73,6 +74,7 @@
 
 		Hall Voltage (n is the charge-carrier density):
 		\[ \Delta V_H = wv_dB = \frac{IB}{tne}\]                                            \\
+		\hline
 	\end{tabular}
 	\begin{tabular}{|p{8cm}|p{8cm}|}
 		\hline
@@ -84,34 +86,43 @@
 
 			\item Power dissapated by a slide wire pushed in a magnetic field
 			      \[ P_\text{dissapated} = I^2 R = \frac{r^2 l^2 B^2}{R} \]
+			\item Faraday's Law: The flux through a magnetic loop
+			      will change if:
+
+			      \begin{enumerate}
+				      \item The loop area changes through expansion, contraction or rotation, creating a motional emf
+				      \item The magnetic field changes
+				            \[\mathcal{E} = \left\lvert \frac{d\phi_m}{dt}\right\rvert = \left\lvert \vec{B} \cdot \frac{d\vec{A}}{dt} + \vec{A} \cdot \frac{d\vec{B}}{dt}\right\rvert\]
+				      \item When only the magnetic field is changing\[ \oint \vec{E} \cdot d\vec{s} = A\left\lvert \frac{dB}{dt}\right\rvert\]
+				      \item Magnetic flux is found by\[ \Phi_m = \vec{A}\cdot\vec{B}\]
+			      \end{enumerate}
 		\end{itemize}
 
 
 		 &
 
 		\begin{itemize}
-			\item Magnetic flux through area
-
-			      \[ \Phi_m = \vec A \cdot \vec B \]
 
 			\item Lenz's law:
+			      \begin{itemize}
+				      \item There is an induced current in a closed, conducting loop if
+				            and only if the magnetic flux through the loop is changing.
+				            The direction of the induced current is such that the induced
+				            magnetic field opposes the change in the flux.
+				      \item A decreasing magnetic field creates an induced field in the same direction as the magnetic field, and an increasing magnetic field creates an induced field in the opposite direction of the magnetic field.
+			      \end{itemize}
+			\item Combing Lenz's and Faraday's Laws:
+			      \begin{itemize}
+				      \item  \[ \mathcal{E} = \oint \vec{E} \cdot d\vec{s} = -\frac{d\Phi_m}{dt}\]
+			      \end{itemize}
 
-			      There is an induced current in a closed, conducting loop if
-			      and only if the magnetic flux through the loop is changing.
-			      The direction of the induced current is such that the induced
-			      magnetic field opposes the change in the flux.
-
-			\item Flux through area A due to magnetic field of solenoid:
-
-			      \[ \Phi_m = \frac{\mu_0 A N I_\text{sol}}{l} \]
-
-			\item According to Faraday's law, the flux through a magnetic loop
-			      can change if:
-
-			      \begin{enumerate}
-				      \item The loop area changes through expansion/contraction or rotation
-				      \item The magnetic field changes
-			      \end{enumerate}
+			\item Misc. Solenoid formulae:
+				  \begin{itemize}
+					  \item Flux through area A due to magnetic field of solenoid\[ \Phi_m = \frac{\mu_0 A N I_\text{sol}}{l} \]
+       \item Electric fields inside and outside of solenoid:
+       \[E_{in} = \frac{r}{2}\left\lvert \frac{dB}{dt} \right\rvert \]
+				  \end{itemize}
+		\[E_{out} = \frac{R^2}{2r}\left\lvert \frac{dB}{dt} \right\rvert \]
 
 		\end{itemize}
 
