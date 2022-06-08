@@ -5,6 +5,8 @@
 \usepackage{makecell}
 \usepackage{amsmath}
 \usepackage{graphicx}
+% \usepackage{times}
+\renewcommand{\seriesdefault}{m}
 \renewcommand{\arraystretch}{1.5}
 \newcommand{\eps}{\epsilon_0}
 \newcommand{\K}{\frac{1}{4 \pi \epsilon_0}}
@@ -12,24 +14,26 @@
 \begin{center}
 	\begin{section}{Quiz 1}
 	 \begin{tabular}{|c|c|}
-		 \hline Equation                                                                              & Notes                                                                     \\
+		 \hline Equation                                                            & Notes                                                                     \\
 		 \hline
-		 $E = \frac{kq}{r^2} \hat r$                                                                  & $\hat r$ points away from $q$                                             \\
+		 $E = \frac{kq}{r^2} \hat r$                                                & $\hat r$ points away from $q$                                             \\
 		 $E_\text{wire} = \frac{1}{4 \pi \epsilon_0} \frac{2 | \lambda |}{r},
-			 E_\text{plane} = \frac{\nu}{2 \epsilon_0},
+			 E_\text{plane} = \frac{\eta}{2 \epsilon_0},
 
-		 E_\text{sphere} \frac{1}{4 \pi \epsilon_0} \frac{Q}{r^2} \hat r $                            & Away from if charge +, else towards.                                      \\
+		 E_\text{sphere} \frac{1}{4 \pi \epsilon_0} \frac{Q}{r^2} \hat r $          & Away from if charge +, else towards.                                      \\
 
-		 $E_\text{dipole} = \frac{1}{4 \pi \epsilon_0} \frac{2 \vec p}{r^3}$                          & On axis of dipole, p from negative to positive, $p = qs$.                 \\
+		 $E_\text{dipole} = \frac{1}{4 \pi \epsilon_0} \frac{2 \vec p}{r^3}$        & On axis of dipole, p from negative to positive, $p = qs$.                 \\
 
-		 $(E_\text{disk})_z = \frac{\nu}{2 \epsilon_0} \left[ 1 - \frac{z}{\sqrt{z^2 + R^2}} \right]$ & Only valid for $z > 0$; $z < 0$ points in opposite direction.             \\
+		 $(E_\text{disk})_z
+		 = \frac{\eta}{2 \epsilon_0} \left[ 1 - \frac{z}{\sqrt{z^2 + R^2}} \right]$ & Only valid for $z > 0$; $z < 0$ points in opposite direction.             \\
 
-		 $\vec E_\text{capacitor} = \frac{Q}{\epsilon_0 A}$                                           & From positive to negative inside, $\vec 0$ outside.                       \\
+		 $\vec E_\text{capacitor} = \frac{Q}{\epsilon_0 A}$                         & From positive to negative inside, $\vec 0$ outside.                       \\
 
 
-		 $\vec F = q \vec E, a = \frac{ \vec F}{m} = \frac{q}{m} \vec E$                              &                                                                           \\
+		 $\vec F = q \vec E, a = \frac{ \vec F}{m} = \frac{q}{m} \vec E$            &                                                                           \\
 
-		 $\vec \tau = \vec p \times \vec E = pE \sin \theta $                                         & \makecell{Greatest when $\vec p \perp \vec E$, 0 when $\vec p || \vec E$. \\ In a nonuniform field, net force towards increasing direction.} \\
+		 $\vec \tau = \vec p \times \vec E = pE \sin \theta $                       & \makecell{Greatest when $\vec p \perp \vec E$, 0 when $\vec p || \vec E$. \\
+		 In a nonuniform field, net force towards increasing direction.}                                                                                        \\
 
 		 \hline
 	 \end{tabular}
@@ -37,33 +41,34 @@
 	\end{section}
 	\begin{section}{Quiz 2}
 	 \begin{tabular}{|c|c|}
-		 \hline Equation                                                                              & Notes                                                                      \\
-		 \hline $\Phi_e = E A \cos \theta = \vec E \cdot A \hat n = \vec E \cdot \vec A$              & $\hat n$ is the normal vector, $\theta$ angle between normal and $\vec E$. \\
+		 \hline Equation                                                                 & Notes                                                                      \\
+		 \hline $\Phi_e = E A \cos \theta = \vec E \cdot A \hat n = \vec E \cdot \vec A$ & $\hat n$ is the normal vector, $\theta$ angle between normal and $\vec E$. \\
 
 
-		 $\Phi_e = \oint \vec E \cdot d \vec A = \frac{Q_\text{in}}{\epsilon_0}$                      & Gauss' law: Flux through closed surface surrounding charge $q$             \\
+		 $\Phi_e = \oint \vec E \cdot d \vec A = \frac{Q_\text{in}}{\epsilon_0}$         & Gauss' law: Flux through closed surface surrounding charge $q$             \\
 
-		 $\vec E_\text{surface} = \frac{\nu}{\eps}$                                                   & Field at the surface of charged conductor.                                 \\
+		 $\vec E_\text{surface} = \frac{\eta}{\eps}$                                     & Field at the surface of charged conductor.                                 \\
 
-		 $U_\text{elec} = U_0 + qEs$                                                                  & Potential energy of charge, $U_0$ doesn't matter for $\Delta U$            \\
+		 $U_\text{elec} = U_0 + qEs$                                                     & Potential energy of charge, $U_0$ doesn't matter for $\Delta U$            \\
 
-		 $U = \frac{k q_1 q_2}{r}$                                                                    & Electric potential of system with two point charges.                       \\
+		 $U = \frac{k q_1 q_2}{r}$                                                       & Electric potential of system with two point charges.                       \\
 
-		 $U = \sum \frac{k q_i q_j}{r_{ij}}$                                                          & For all pairs $(i,j)$. Num pairs $= \frac{n(n-1)}{2}$                      \\
+		 $U = \sum \frac{k q_i q_j}{r_{ij}}$                                             & For all pairs $(i,j)$. Num pairs $= \frac{n(n-1)}{2}$                      \\
 
-		 $U_\text{dipole} = - p E \cos \phi = - \vec p \cdot \vec E$                                  & Potential energy of dipole.                                                \\
+		 $U_\text{dipole} = - p E \cos \phi = - \vec p \cdot \vec E$                     & Potential energy of dipole.                                                \\
 
-		 $U_\text{q + sources} = qV$                                                                  & Positive charge slows towards higher potential, speeds up towards lower.   \\
+		 $U_\text{q + sources} = qV$                                                     & Positive charge slows towards higher potential, speeds up towards lower.   \\
 
-		 $V = Es, E_\text{inside capacitor} = \frac{\Delta V_v}{d}$                                   & Electric potential inside capacitor, $s$ is distance from negative node.   \\
+		 $V = Es, E_\text{inside capacitor} = \frac{\Delta V_v}{d}$                      & Electric potential inside capacitor, $s$ is distance from negative node.   \\
 
-		 $K_f + q V_f = K_i q + V_i$                                                                  & Conservation of energy.                                                    \\
+		 $K_f + q V_f = K_i q + V_i$                                                     & Conservation of energy.                                                    \\
 
-		 $V = \K \frac{Q}{r}$                                                                         & Sphere of charge $r \ge R$                                                 \\
+		 $V = \K \frac{Q}{r}$                                                            & Sphere of charge $r \ge R$                                                 \\
 
-		 $V_\text{ring on axis} = \K \frac{Q}{\sqrt{R^2 + z^2}}$                                      &                                                                            \\
+		 $V_\text{ring on axis} = \K \frac{Q}{\sqrt{R^2 + z^2}}$                         &                                                                            \\
 
-		 $V_\text{disk on axis} = \frac{Q}{2 \pi \epsilon_0 R^2} \left( \sqrt{R^2 + z^2} - z \right)$ &                                                                            \\
+		 $V_\text{disk on axis}
+		 = \frac{Q}{2 \pi \epsilon_0 R^2} \left( \sqrt{R^2 + z^2} - z \right)$           &                                                                            \\
 
 
 
@@ -107,41 +112,42 @@
 	\begin{section}{Quiz 4}
 	 \begin{tabular}{|c|c|}
 		 \hline
-		 Equation                                                                               & Notes                                                               \\
+		 Equation                                                                   & Notes                                                               \\
 		 \hline
-		 $i_e = n_e A v_d$                                                                      & $i_e$ is electron current, $n_e$ electrons/$m^3$, $v_d$ drift speed \\
+		 $i_e = n_e A v_d$                                                          & $i_e$ is electron current, $n_e$ electrons/$m^3$, $v_d$ drift speed \\
 
-		 $i_e = \frac{n_e e \tau A}{m} E$                                                       & \makecell{Electron current caused by electric field $E$,            \\
-		 $\tau=$ mean time between collisions. $\frac{1}{\tau}=$ collision rate.}                                                                                     \\
+		 $i_e = \frac{n_e e \tau A}{m} E$                                           & \makecell{Electron current caused by electric field $E$,            \\
+		 $\tau=$ mean time between collisions. $\frac{1}{\tau}=$ collision rate.}                                                                         \\
 
-		 $J = \frac{I}{A} = n_e e v_d$                                                          & Current density                                                     \\
+		 $J = \frac{I}{A} = n_e e v_d$                                              & Current density                                                     \\
 
-		 $\sum I_\text{in} = \sum I_\text{out}$                                                 & Kirchhoff's Junction law.                                           \\
+		 $\sum I_\text{in} = \sum I_\text{out}$                                     & Kirchhoff's Junction law.                                           \\
 
-		 $\sigma = \frac{n_e e^2 \tau}{m}, J = \sigma E$                                        & Conductivity and current density                                    \\
+		 $\sigma = \frac{n_e e^2 \tau}{m}, J = \sigma E$                            & Conductivity and current density                                    \\
 
-		 $\rho = \frac{1}{\sigma}$                                                              & Resistivity.                                                        \\
+		 $\rho = \frac{1}{\sigma}$                                                  & Resistivity.                                                        \\
 
 
-		 $R = \frac{\rho L}{A}$                                                                 & Resistance in $\Omega \equiv 1 V/A$                                 \\
+		 $R = \frac{\rho L}{A}$                                                     & Resistance in $\Omega \equiv 1 V/A$                                 \\
 
-		 $I = \frac{\Delta V}{R}$                                                               & Ohm's law                                                           \\
+		 $I = \frac{\Delta V}{R}$                                                   & Ohm's law                                                           \\
 
-		 $R_\text{ideal wire} = 0, R_\text{ideal insulator} = \infty$                           &                                                                     \\
+		 $R_\text{ideal wire} = 0, R_\text{ideal insulator} = \infty$               &                                                                     \\
 
-		 $P = \frac{dU}{dt} = \frac{dq}{dt} \mathcal E = I \mathcal E$                          &                                                                     \\
+		 $P = \frac{dU}{dt} = \frac{dq}{dt} \mathcal E = I \mathcal E$              &                                                                     \\
 
-		 $P = I \Delta V_R = I^2 R = \frac{(\Delta V_R)^2}{R}$                                  & Power dissapated by resistor.                                       \\
+		 $P = I \Delta V_R = I^2 R = \frac{(\Delta V_R)^2}{R}$                      & Power dissapated by resistor.                                       \\
 
-		 $R_\text{series} = \sum R, R_\text{parallel} = \left( \sum \frac{1}{R_i} \right)^{-1}$ &                                                                     \\
+		 $R_\text{series} = \sum R, R_\text{parallel}
+		 = \left( \sum \frac{1}{R_i} \right)^{-1}$                                  &                                                                     \\
 
-		 $R_\text{ammeter} = 0 \Omega $                                                         & Ideal ammeter                                                       \\
+		 $R_\text{ammeter} = 0 \Omega $                                             & Ideal ammeter                                                       \\
 
-		 $Q = Q_0 e^{-t/RC} = Q_0 e^{-t/\tau}, V = V_0 e^{-t/RC} = V_0 e^{-t/\tau}$             & Charge and voltage across capacitor as it discharges.               \\
+		 $Q = Q_0 e^{-t/RC} = Q_0 e^{-t/\tau}, V = V_0 e^{-t/RC} = V_0 e^{-t/\tau}$ & Charge and voltage across capacitor as it discharges.               \\
 
-		 $Q = Q_0 (1 - e^{-t / \tau}), I = I_0 e^{-t / \tau}$                                   & Capacitor charging                                                  \\
+		 $Q = Q_0 (1 - e^{-t / \tau}), I = I_0 e^{-t / \tau}$                       & Capacitor charging                                                  \\
 
-		 $I_\text{cap}(0^+) = I_0, I_\text{cap}(+\infty) = 0$                                   & Capacitor is first a short circuit, approaches closed circuit       \\
+		 $I_\text{cap}(0^+) = I_0, I_\text{cap}(+\infty) = 0$                       & Capacitor is first a short circuit, approaches closed circuit       \\
 
 		 \hline
 	 \end{tabular}
@@ -279,9 +285,9 @@
 		 $V_L = I_L X_L, X_L = \omega L$                                                & Voltage and inductive reactance                   \\
 
 		 $I_\text{max RLC} = \frac{\mathcal E_0}{Z}
-		 = \frac{\mathcal E_0}{\sqrt{R^2 (X_L - X_C)^2}}$                               & Peak current in RLC circuit                       \\
+		 = \frac{\mathcal E_0}{\sqrt{R^2 + (X_L - X_C)^2}}$                             & Peak current in RLC circuit                       \\
 
-		 $\phi = \tan^{-1} \left( \frac{X_L - X_C}{R} \right)$                          & Phase angle between emf and current.              \\
+		 $\phi = \tan^{-1} \left( \frac{X_L - X_C}{R} \right)$                          & Angle by which emf leads current                  \\
 
 		 $\omega_0 = \frac{1}{\sqrt{LC}}, I_\text{max}
 		 = \frac{\mathcal E_0}{R}$                                                      & \makecell{Resonance frequency in RLC circuit      \\
@@ -290,6 +296,9 @@
 		 $P_R = \frac 1 2 I_R^2 R = \left( \frac{I_R}{\sqrt 2} \right)^2 R
 		 = (I_\text{rms})^2 R = \frac{(V_\text{rms})^2}{R} = I_\text{rms} V_\text{rms}$ & Average power loss in a resistor.                 \\
 
+		 $P_\text{source} = \frac 1 2 I \mathcal E \cos \phi
+		 = I_\text{rms} \mathcal E_\text{rms} \cos \phi$                                & $\phi$ angle that current lags the emf.           \\
+
 
 		 \hline
 	 \end{tabular}
@@ -297,6 +306,10 @@
 	 \includegraphics[width=100pt]{final_cheet_sheet_resources/knhwzgniatxeirlvrdqvgqrgyvbpycxs.jpg}
 	 \includegraphics[width=100pt]{final_cheet_sheet_resources/mqbfppsrjecahghjqzghukiiyymfwtox.jpg}
 	 \includegraphics[width=100pt]{final_cheet_sheet_resources/bbkpguezzmblocutfwvwjptztmtqsieb.jpg}
+	 \\
+	 \includegraphics[height=100pt]{final_cheet_sheet_resources/iqzochavmjtzuescfokiyycliupdpttn.jpg}
+	 \includegraphics[height=100pt]{final_cheet_sheet_resources/clxkvexujwruofnqyneeegabhuaeszyq.jpg}
+
 	\end{section}
 \end{center}
 \end{document}
